@@ -1,0 +1,41 @@
+{
+  "name": "microbundle-test",
+  "version": "1.0.0",
+  "description": "",
+  "source": "lib/main.ts",
+  "main": "dist/main.js",
+  "module": "dist/main.m.js",
+  "esmodule": "dist/main.modern.js",
+  "types": "dist/main.d.ts",
+  "unpkg": "dist/main.umd.js",
+  "scripts": {
+    "build": "microbundle",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "jest": "^26.0.1",
+    "microbundle": "^0.12.0",
+    "prettier": "^2.0.5",
+    "ts-jest": "^26.0.0"
+  },
+  "dependencies": {
+    "@types/chai": "^4.2.11",
+    "@types/jest": "^25.2.3",
+    "@types/node": "^14.0.5",
+    "ts-node": "^8.10.1",
+    "typescript": "^3.9.3"
+  },
+  "files": [
+    "lib",
+    "dist"
+  ],
+  "jest": {
+    "preset": "ts-jest/presets/js-with-ts",
+    "collectCoverageFrom": [
+      "lib/**/*.{ts,tsx,js,jsx}"
+    ]
+  }
+}
