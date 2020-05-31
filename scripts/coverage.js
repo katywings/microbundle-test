@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-const { spawnLive, args, scriptsDir } = require('./lib');
+const { spawnScript, args } = require("./lib");
 
-spawnLive('node', [scriptsDir('test.js'), '--coverage', ...args]);
+spawnScript("test", ["--coverage", ...args]);

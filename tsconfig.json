@@ -1,6 +1,13 @@
 {
   "compilerOptions": {
+    "jsx": "react",
     "noEmit": true,
-    "allowJs": true
+    "allowJs": true,
+    "baseUrl": ".",
+    "paths": {
+      "microbundle-test": [
+        "./lib/main.ts"
+      ]
+    }
   }
 }

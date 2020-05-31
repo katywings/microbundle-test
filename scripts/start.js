@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-const { spawnLive } = require('./lib');
+const { spawn } = require("./lib");
 
-spawnLive('npx', ['ts-node', 'lib/main.ts']);
+spawn("npx", ["ts-node", "lib/main.ts"]);

@@ -2,4 +2,4 @@
 
 const { spawn, args } = require("./lib");
 
-spawn("npx", ["jest", "spec", "--notify", ...args]);
+spawn("npx", ["prettier", "--write", ...args, "."]);
