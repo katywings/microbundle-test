@@ -39,7 +39,10 @@
   },
   "files": [
     "lib",
-    "dist"
+    "dist",
+    "devtools/package.json",
+    "devtools/lib",
+    "devtools/dist"
   ],
   "standard-version": {
     "scripts": {
